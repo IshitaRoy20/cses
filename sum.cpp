@@ -1,28 +1,23 @@
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
 int main()
 {
-    long long n, x;
+    ll n, x, a;
     cin >> n >> x;
     int c = 0;
-    vector<long long> arr(n);
+    map<ll, ll> mp;
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        int t = x - arr[i];
-        if (find(arr.begin(), arr.end(), t) != arr.end())
+        cin >> a;
+        if (c == 0)
         {
-            if (distance(arr.begin(), find(arr.begin(), arr.end(), t)) == i)
-                continue;
-            else
+            if (mp.find(x - a) != mp.end())
             {
+                cout << (i + 1) << " " << mp.find(x - a)->second;
                 c = 1;
-                cout << (i + 1) << " " << distance(arr.begin(), find(arr.begin(), arr.end(), t)) + 1 << endl;
-                break;
             }
+            mp.insert({a, i + 1});
         }
     }
     if (c == 0)
