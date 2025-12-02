@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    int n;
+    long long n;
     cin >> n;
     int c = 0;
-    vector<int> arr(n);
-    vector<int> left(n);
+    vector<long long> arr(n);
+    vector<long long> left(n);
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -25,6 +25,6 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
-        cout << left[i];
+        cout << left[i] << " ";
     }
 }
