@@ -22,7 +22,7 @@ int main()
     {
         long long a, b, c;
         cin >> a >> b >> c;
-        long long x = power(b, c, mod - 1);
-        cout << power(a, x, mod) << endl;
+        long long m = power(b, c, mod - 1);
+        cout << power(a, m, mod) << endl;
     }
 }
