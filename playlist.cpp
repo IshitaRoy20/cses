@@ -18,5 +18,5 @@ int main()
         ind[a[r]] = r + 1;
         r++;
     }
-    cout << mx;
+    cout <<mx;
 }
