@@ -16,9 +16,9 @@ ll power(ll a, ll b, ll c)
 }
 int main()
 {
-    long long t;
-    cin >> t;
-    while (t--)
+    long long k;
+    cin >> k;
+    while (k--)
     {
         long long a, b, c;
         cin >> a >> b >> c;
