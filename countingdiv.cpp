@@ -3,9 +3,9 @@
 using namespace std;
 void find(ll div[])
 {
-    for (int i = 1; i < 1000005; i++)
+    for (int i = 1; i < 1000001; i++)
     {
-        for (int j = i; j < 1000005; j += i)
+        for (int j = i; j < 1000001; j += i)
         {
             div[j]++;
         }
@@ -13,7 +13,7 @@ void find(ll div[])
 }
 int main()
 {
-    ll div[1000005] = {};
+    ll div[10000001] = {};
     find(div);
     ll n;
     cin >> n;
