@@ -11,17 +11,16 @@ int main()
         cin >> a[i];
 
     map<ll, ll> mp;
-    mp[0] = 1;
 
     ll ps = 0, ans = 0;
     for (ll x : a)
     {
-        ps = ((ps+x)%n+n)%n;
-       if(ps==0)
-       ans+=1;
-    
-       ans+=mp[ps];
-       mp[ps]+=1;
+        ps = ((ps + x) % n + n) % n;
+        if (ps == 0)
+            ans += 1;
+
+        ans += mp[ps];
+        mp[ps] += 1;
     }
 
     cout << ans;
