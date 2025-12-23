@@ -18,7 +18,8 @@ vector<string> gc(int n)
 }
 int main()
 {
-    int n = 2;
+    int n;
+    cin>>n;
     for (auto &s : gc(n))
         cout << s << endl;
     return 0;
