@@ -16,7 +16,8 @@ int main()
 
     while (!q.empty())
     {
-        auto [x, y] = q.front();
+        int x = q.front().first;
+        int y = q.front().second;
         q.pop();
 
         for (int i = 0; i < 8; i++)
